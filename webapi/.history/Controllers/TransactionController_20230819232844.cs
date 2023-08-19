@@ -52,7 +52,7 @@ public class TransactionController : ControllerBase
                 date = t.Date,
                 Description = t.Description,
                 type = t.Type,
-                category = t.Category.Name,
+                category = t.Category.Name
                 payment = t.PaymentMethod.Method // Categoryプロパティから直接カテゴリ名を取得
             })
             .ToListAsync();

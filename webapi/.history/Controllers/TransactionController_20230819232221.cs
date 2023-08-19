@@ -44,7 +44,6 @@ public class TransactionController : ControllerBase
     {
         var data = await _context.Transactions
             .Include(t => t.Category) // カテゴリ情報をIncludeする
-            .Include(p => p.PaymentMethod)
             .Select(t => new
             {
                 id = t.Id,
@@ -52,8 +51,7 @@ public class TransactionController : ControllerBase
                 date = t.Date,
                 Description = t.Description,
                 type = t.Type,
-                category = t.Category.Name,
-                payment = t.PaymentMethod.Method // Categoryプロパティから直接カテゴリ名を取得
+                category = t.Category.Name // Categoryプロパティから直接カテゴリ名を取得
             })
             .ToListAsync();
 
@@ -65,10 +63,6 @@ public class TransactionController : ControllerBase
     public async Task<ActionResult> Post(Transaction transaction)
     {
         var maxID = await _context.Transactions.MaxAsync(t => t.Id);
-        if (transaction.Id <= maxID)
-        {
-            return BadRequest("");
-        }
         _context.Transactions.Add(transaction);
         await _context.SaveChangesAsync();
         return NoContent();
