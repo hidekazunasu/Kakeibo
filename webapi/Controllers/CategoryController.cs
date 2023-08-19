@@ -47,7 +47,6 @@ public class CategoryController : ControllerBase
         foreach (var  item in list)
         {
             maxid = maxid < item.Id ?item.Id: maxid;
-            
         }
         _category.Id = maxid + 1;
         _context.Categories.Add(_category);

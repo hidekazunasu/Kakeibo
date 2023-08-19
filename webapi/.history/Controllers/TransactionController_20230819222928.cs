@@ -40,23 +40,23 @@ public class TransactionController : ControllerBase
         }
     }
     [HttpGet("/test")]
-    public async Task<IActionResult> GetData()
-    {
-        var data = await _context.Transactions
-            .Include(t => t.Category) // カテゴリ情報をIncludeする
-            .Select(t => new
-            {
-                id = t.Id,
-                amount = t.Amount,
-                date = t.Date,
-                Description = t.Description,
-                type = t.Type,
-                category = t.Category.Name // Categoryプロパティから直接カテゴリ名を取得
-            })
-            .ToListAsync();
+public async Task<IActionResult> GetData()
+{
+    var data = await _context.Transactions
+        .Include(t => t.Category) // カテゴリ情報をIncludeする
+        .Select(t => new
+        {
+            id = t.Id,
+            amount = t.Amount,
+            date = t.Date,
+            Description = t.Description,
+            type = t.Type,
+            category = t.Category.Name // Categoryプロパティから直接カテゴリ名を取得
+        })
+        .ToListAsync();
 
-        return Ok(data);
-    }
+    return Ok(data);
+}
 
 
     [HttpPost]
@@ -64,9 +64,9 @@ public class TransactionController : ControllerBase
     {
         var list = await _context.Transactions.ToListAsync();
         long maxid = 0;
-        foreach (var item in list)
+        foreach (var  item in list)
         {
-            maxid = maxid < item.Id ? item.Id : maxid;
+            maxid = maxid < item.Id ?item.Id: maxid;
         }
         transaction.Id = maxid + 1;
         _context.Add(transaction);

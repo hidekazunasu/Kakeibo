@@ -7,8 +7,6 @@ public partial class Transaction
 {
     public long Id { get; set; }
 
-    
-
     public double? Amount { get; set; }
 
     public string? Date { get; set; }

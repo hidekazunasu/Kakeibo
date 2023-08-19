@@ -9,6 +9,6 @@ public partial class Account
 
     public string? Name { get; set; }
 
-    public double? Balance { get; set; }
+    public long? Balance { get; set; }
 
 }
