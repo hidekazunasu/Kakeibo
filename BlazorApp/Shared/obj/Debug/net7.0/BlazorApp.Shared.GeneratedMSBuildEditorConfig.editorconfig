@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = BlazorApp.Shared
-build_property.ProjectDir = /home/basil/project/kakeibo/BlazorApp/Shared/
+build_property.ProjectDir = /workspaces/NET/Kakeibo/BlazorApp/Shared/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,33 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/basil/project/kakeibo/BlazorApp/Client/BlazorApp.Client.csproj": {}
+    "/workspaces/NET/Kakeibo/BlazorApp/Client/BlazorApp.Client.csproj": {}
   },
   "projects": {
-    "/home/basil/project/kakeibo/BlazorApp/Client/BlazorApp.Client.csproj": {
+    "/workspaces/NET/Kakeibo/BlazorApp/Client/BlazorApp.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/basil/project/kakeibo/BlazorApp/Client/BlazorApp.Client.csproj",
+        "projectUniqueName": "/workspaces/NET/Kakeibo/BlazorApp/Client/BlazorApp.Client.csproj",
         "projectName": "BlazorApp.Client",
-        "projectPath": "/home/basil/project/kakeibo/BlazorApp/Client/BlazorApp.Client.csproj",
-        "packagesPath": "/home/basil/.nuget/packages/",
-        "outputPath": "/home/basil/project/kakeibo/BlazorApp/Client/obj/",
+        "projectPath": "/workspaces/NET/Kakeibo/BlazorApp/Client/BlazorApp.Client.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspaces/NET/Kakeibo/BlazorApp/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/basil/.nuget/NuGet/NuGet.Config"
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
-                "projectPath": "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj"
+              "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
+                "projectPath": "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj"
               }
             }
           }
@@ -39,21 +39,32 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -70,7 +81,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.10, 7.0.10]"
+              "version": "[8.0.0, 8.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -78,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -87,17 +98,17 @@
         }
       }
     },
-    "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
+    "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
+        "projectUniqueName": "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
         "projectName": "BlazorApp.Shared",
-        "projectPath": "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
-        "packagesPath": "/home/basil/.nuget/packages/",
-        "outputPath": "/home/basil/project/kakeibo/BlazorApp/Shared/obj/",
+        "projectPath": "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspaces/NET/Kakeibo/BlazorApp/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/basil/.nuget/NuGet/NuGet.Config"
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -147,12 +158,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

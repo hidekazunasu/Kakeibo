@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {}
+    "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {}
   },
   "projects": {
-    "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
+    "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
+        "projectUniqueName": "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
         "projectName": "BlazorApp.Shared",
-        "projectPath": "/home/basil/project/kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
-        "packagesPath": "/home/basil/.nuget/packages/",
-        "outputPath": "/home/basil/project/kakeibo/BlazorApp/Shared/obj/",
+        "projectPath": "/workspaces/NET/Kakeibo/BlazorApp/Shared/BlazorApp.Shared.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspaces/NET/Kakeibo/BlazorApp/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/basil/.nuget/NuGet/NuGet.Config"
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,22 +35,20 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -69,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
