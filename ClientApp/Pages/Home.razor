@@ -1,0 +1,39 @@
+﻿@page "/"
+@using webapi.Models
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+<h1>口座一覧</h1>
+
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>口座名</th>
+            <th>残高</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in accounts)
+        {
+            <tr>
+                <td>@account.Id</td>
+                <td>@account.Name</td>
+                <td>@account.Balance</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code
+{
+    private Account[] accounts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        accounts = await Http.GetFromJsonAsync<Account[]>("https://127.0.0.1:7150/Accounty");
+    }
+}
